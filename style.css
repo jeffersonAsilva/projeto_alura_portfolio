@@ -1,0 +1,486 @@
+/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-menu: #ffffff;
+    --cor-do-link: #000000;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+   
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+    /*width: 1136px;
+    height: 86px;*/
+    margin: 3% 5%;
+}
+
+.cabecalho__logo {
+    max-width: 80px; /* Ajuste para telas pequenas */
+}
+
+.cabecalho__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navegacao__lista {
+    display: none;
+}
+
+.navegacao__elemento a {
+    font-size: 0.9rem;
+}
+/* ------------------------------ Seção Apresentação ------------------------------*/
+
+.apresentacao{
+    display: flex;
+    /*width: 1136px;
+    height: 368px;*/
+    
+    margin: 0 5%;
+}
+.apresentacao__conteiner{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: flex-start;
+}
+.apresentacao__titulo{
+    font-size: 52px;
+    line-height: 61.02px;
+}
+.apresentacao__subtitulo{
+    font-size: 24px;
+    line-height: 25.83px;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+   
+}
+.sobre-mim{
+    font-family: 'Amatic sc', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    
+}
+.sobrediv{
+    display: flex;
+    flex-direction: column;
+   
+    margin-left: 5%;
+    gap: 16px;
+    justify-content: center;
+}
+
+.sobre-mim__titulo{
+    font-size: 32px;
+}
+.sobre-mim__texto{
+    font-size: 16px;
+  
+}
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+.habilidades{
+    font-family: 'Amatic sc', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    
+
+}
+.habilidade__line{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+li.habilidade__img img  {
+    width: 30px;
+    margin: 10% 0;
+}
+li.habilidade__name {
+    font-family: 'Amatic sc', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+   
+}
+
+.habilidade__box {
+    background: white;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #000000;
+    
+    
+}
+/*https://github.com/almeidaTamires/challenge-one-portfolio-br/blob/master/index.html*/
+/*------------------------------ Seção de Hobbies --------------------------------*/
+#hobbies {
+    margin: 3% 0;
+}
+.hobbies__title {
+    font-family: 'Amatic sc', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+}    
+
+.hobbies__box {
+    background: white;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #000000;
+}
+.hobbies__line {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.hobbies__img img {
+    width: 30px;
+    margin: 10% 0;
+}
+
+li.hobbies__name{
+    font-family: 'Amatic sc', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+} 
+
+    /*mobile*/
+
+    @media only screen and (max-width: 600px) {
+        .hobbies__box {
+        margin: 2%;
+        }
+    }
+    
+        /*tablet*/
+    
+    @media only screen and (max-width: 820px) {
+        section.hobbies {
+        display: flex;
+        flex-direction: column;
+        width: 444px;
+        }
+        .hobbies__box {
+            margin-bottom: 2%;
+        }
+        .hobbies__line {
+            justify-content: flex-start;
+        }
+    }
+
+
+/*------------------------------ Seção de Projetos --------------------------------*/
+
+section.experience{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.experience__section__title {
+    font-family: 'Amatic sc', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    margin: 3% 0;
+}
+
+.experiencie__box {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-left: 30%;
+}
+
+.experience__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.experience__img {
+    width: 500px;
+}
+
+.experiencia__botao--repo, .experiencia__botao--demo {
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 5px;
+}
+
+    /*tablet*/
+    @media only screen and (max-width: 600px) {
+        .experience__img {
+            width: 200px;
+            height: 100px;
+            margin-left: 22%;
+        }
+        .experiencie__box {
+            margin: 0;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+    }
+    
+
+@media only screen and (max-width: 820px) {
+    .experience__img {
+        width: 300px;
+        height: 150px;
+        margin:0 55px;
+    }
+    .experiencie__box {
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+/*------------------------------ Seção de Contato ---------------------------------*/
+
+section.formcontato{
+    width: 100%;
+    display: flex;
+    margin: 3% 5%;
+}
+
+.formcontato__contacto {
+    display: flex;
+}
+
+.formcontato__title {
+    margin: 0;
+    font-family: 'Amatic sc', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   justify-content: space-between;
+}
+
+.formcontato__text {
+    margin: 0 10px;
+}
+
+.formcontato__input {
+    padding: 10px;
+    width: 100%;
+    margin: 1%;
+}
+.formcontato--esquerda {
+    width: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.formcontato__img {
+    width: 160px;
+}
+
+    /*tablet*/
+
+@media only screen and (max-width: 820px) {
+    .formcontato--esquerda {
+        display: none;
+    }
+    .formcontato__text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    }
+    .formcontato__subtext {
+    width: 300px;
+    line-height: 16px;
+    }
+   input.formcontato__input {
+        margin: 3%;
+        width: 260px
+    }
+    textarea.formcontato__textarea {
+        margin: 3%;
+        width: 270px
+
+    }
+    .formcontato__form {
+        justify-content: inherit;
+    }
+    .title__contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+
+}
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
+
+@media only screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .cabecalho {
+        flex-direction: column;
+        margin: 0;
+        }
+    ul.navegacao__lista {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .navegacao {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items:center;
+        letter-spacing: 1px;
+    }
+    li.navegacao__elemento{
+        margin: 1%;
+        }
+    }
+    /*tablet*/
+    @media only screen and (max-width: 820px) {
+        section.menu {
+           display: none;
+        }
+    }
+/*parte 2 ---------------*/
+@media only screen and (max-width: 600px) {
+    .about__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    margin: 1%;
+    }
+    h3.about__title {
+        margin: 1%;
+    }
+}
+
+    /*tablet*/
+
+
+@media only screen and (max-width: 820px) {
+    section.about {
+        margin: 0;
+    }
+    .about__container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    }
+}
+
+/*--------------------------parte 3---*/
+@media only screen and (max-width: 600px) {
+    section.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .habilidade__box {
+    margin: 2%;
+ }
+}
+
+    /*tablet*/
+    
+@media only screen and (max-width: 820px) {
+    section.habilidades{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    }
+    .habilidade__line {
+        justify-content: flex-start;
+    }
+    .habilidade__box {
+        margin-bottom: 2%;
+    }
+    
+}
+
+/*footer */
+section.footer{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Amatic sc', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center; 
+    background-color: #1e2c6d;
+    width: 100%;
+    height: 100px; 
+}
+
+/*tablet*/
+@media only screen and (max-width: 820px){
+    section.footer {
+    justify-content: center;
+    }
+}
